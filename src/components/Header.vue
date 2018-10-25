@@ -26,7 +26,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-warning" data-toggle="dropdown" href="#" role="button"
              aria-haspopup="true" aria-expanded="false" @click="isDropDownOpen = !isDropDownOpen">Save & Load</a>
-          <div class="dropdown-menu" :class="{ show : isDropDownOpen }">
+          <div class="dropdown-menu" :class="{ show : isDropDownOpen }" v-on:mouseleave="isDropDownOpen = false">
             <a class="dropdown-item text-warning" href="#" @click="saveData">Save Data</a>
             <a class="dropdown-item text-warning" href="#" @click="loadData">Load Data</a>
           </div>
